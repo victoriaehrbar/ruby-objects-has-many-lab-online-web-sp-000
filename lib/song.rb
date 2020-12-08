@@ -1,5 +1,6 @@
+
 class Song
-  attr_accessor :title, :author
+  attr_accessor :name, :artist
 
   @@all = []
 
@@ -13,6 +14,6 @@ class Song
   end
 
   def artist_name
-    artist.name if author
+    artist.name if artist
   end
 end
