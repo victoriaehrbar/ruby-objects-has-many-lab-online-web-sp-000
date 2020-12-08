@@ -22,10 +22,10 @@ class Author
   end
 
   def posts
-    Song.all.select {|song| song.artist == self}
+    Post.all.select {|song| song.artist == self}
   end
 
   def self.post_count
-    Song.all.count
+    Post.all.count
   end
 end
